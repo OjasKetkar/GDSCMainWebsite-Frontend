@@ -1,0 +1,103 @@
+
+/* Hackathon Part */
+.ourVisionSection {
+    /* width: 800px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    margin-inline: 10rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .ourVision_imageContainer {
+    flex: 1 ;
+    display: flex;
+    justify-content: center;
+    /* margin: 1rem; */
+  }
+  
+  .ourVision_image {
+    width: 500px;
+    height: auto;
+    margin: 0;
+    border-radius: 1rem;
+  }
+  
+  .ourVision_descriptionContainer {
+    flex: 1 ;
+    /* margin: 1rem; */
+    margin-inline: 4rem;
+  }
+  
+  .ourVision_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #00BF8D;
+  }
+  
+  .ourVision_description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #202124;
+    text-align: justify;
+  }
+
+  .ourVision_participateButton {
+    background-color: #00BF8D;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ourVision_participateButton:hover {
+    background-color: #00a77b;
+  }
+  
+  .ourVision_buttonText {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  
+
+  @media only screen and (max-width: 1100px) {
+    .ourVisionSection{
+        flex-direction: column;
+    }
+
+    .ourMission_imageContainer{
+        justify-content: center;
+    }
+    .ourVision_participateButton{
+        margin-bottom: 1rem;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    .ourVisionSection{
+      margin-inline: 5rem;
+    }
+
+    /* .ourVision_title{
+      font-size: 1.5rem;
+    } */
+  }
+
+  @media only screen and (max-width: 600px) {
+    .ourVisionSection{
+      margin-inline: 1rem;
+    }
+    .ourVision_descriptionContainer{
+      margin-inline: 1rem;
+    }
+   
+  }

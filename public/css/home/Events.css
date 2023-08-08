@@ -1,0 +1,109 @@
+
+/* Our Mission Part */
+.eventsSection {
+    /* width: 800px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin: 2rem;
+    margin-inline: 10rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1rem;
+    border-radius: 1rem;
+    }
+    
+    .events_imageContainer {
+    flex: 1 ;
+    display: flex;
+    justify-content: start;
+    /* margin: 1rem; */
+    }
+    
+    .events_image {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    border-radius: 1rem;
+    /* box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, #E72051 0px 0px 0px 1px; */
+    }
+    
+    .events_descriptionContainer {
+    flex: 1 ;
+    /* margin: 1rem; */
+    margin-inline: 4rem;
+
+    }
+    
+    .events_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #FFC802;
+    text-align: end;
+    }
+    
+    .events_description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #202124;
+    text-align: justify;
+    }
+    
+    .events_buttonContainer{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .events_participateButton {
+    background-color: #FFC802;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    
+    transition: background-color 0.3s ease;
+    }
+    
+    .events_participateButton:hover {
+    background-color: #ddae03;
+    }
+    
+    .events_buttonText {
+    display: inline-block;
+    margin: 0 0.5rem;
+    }
+    
+    /* Media Query */
+    @media only screen and (max-width: 1100px) {
+        .eventsSection{
+            flex-direction: column;
+        }
+        .events_buttonContainer{
+            margin-bottom: 1rem;
+        }
+      }
+    
+    @media screen and (max-width: 800px) {
+        .eventsSection{
+            margin-inline: 5rem;
+        }   
+        /* .events_title{
+            font-size: 1.5rem;
+        } */
+    }
+
+    @media screen and (max-width: 600px) {
+        .eventsSection{
+            margin-inline: 1rem;
+        }   
+
+        .events_descriptionContainer{
+            margin-inline: 1rem;
+        }
+       
+    }
+    

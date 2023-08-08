@@ -1,0 +1,114 @@
+
+/* Our Mission Part */
+.ourMissionSection {
+/* width: 800px; */
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: row-reverse;
+align-items: center;
+margin: 2rem;
+margin-inline: 10rem;
+background-color: white;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+padding: 1rem;
+border-radius: 1rem;
+}
+
+.ourMission_imageContainer {
+flex: 1;
+display: flex;
+justify-content: start;
+/* margin: 1rem; */
+}
+
+.ourMission_image {
+width: 350px;
+height: auto;
+margin: 0;
+border-radius: 1rem;
+/* box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, #E72051 0px 0px 0px 1px; */
+}
+
+.ourMission_descriptionContainer {
+flex: 1 ;
+/* margin: 1rem; */
+margin-inline: 4rem;
+
+}
+
+.ourMission_title {
+font-size: 2rem;
+margin-bottom: 1rem;
+color: #E72051;
+text-align: end;
+}
+
+.ourMission_description {
+font-size: 1rem;
+line-height: 1.5;
+color: #202124;
+text-align: justify;
+}
+
+.ourMission_buttonContainer{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.ourMission_participateButton {
+background-color: #E72051;
+color: #FFFFFF;
+border: none;
+border-radius: 5rem;
+padding: 0.5rem 1rem;
+font-size: 1.2rem;
+cursor: pointer;
+margin-top: 1rem;
+
+transition: background-color 0.3s ease;
+}
+
+.ourMission_participateButton:hover {
+background-color: #d41e4b;
+}
+
+.ourMission_buttonText {
+display: inline-block;
+margin: 0 0.5rem;
+}
+
+/* Media Query */
+@media only screen and (max-width: 1100px) {
+    .ourMissionSection{
+        flex-direction: column;
+    }
+
+    .ourMission_imageContainer{
+        justify-content: center;
+    }
+    .ourMission_buttonContainer{
+        margin-bottom: 1rem;
+    }
+  }
+
+@media only screen and (max-width: 800px) {
+    
+    .ourMissionSection{
+        margin-inline: 5rem;
+    }
+    /* .ourMission_title{
+      font-size: 1.5rem;
+
+    } */
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    .ourMissionSection{
+        margin-inline: 1rem;
+    }
+    .ourMission_descriptionContainer{
+        margin-inline: 1rem;
+    }
+   
+  }

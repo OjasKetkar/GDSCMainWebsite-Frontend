@@ -1,0 +1,100 @@
+
+/* Hackathon Part */
+.ourProjectsSection {
+    /* width: 800px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    margin-inline: 10rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .ourProjects_imageContainer {
+    flex: 1 ;
+    display: flex;
+    justify-content: center;
+    /* margin: 1rem; */
+  }
+  
+  .ourProjects_image {
+    width: 500px;
+    height: auto;
+    margin: 0;
+    border-radius: 1rem;
+  }
+  
+  .ourProjects_descriptionContainer {
+    flex: 1 ;
+    /* margin: 1rem; */
+    margin-inline: 4rem;
+  }
+  
+  .ourProjects_title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #009FB4;
+  }
+  
+  .ourProjects_description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #202124;
+    text-align: justify;
+  }
+
+  .ourProjects_participateButton {
+    background-color: #009FB4;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .ourProjects_participateButton:hover {
+    background-color: #007c8d;
+  }
+  
+  .ourProjects_buttonText {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  
+
+  /* Media Query */
+  @media only screen and (max-width: 1100px) {
+    .ourProjectsSection{
+        flex-direction: column;
+    }
+    .ourProjects_participateButton{
+        margin-bottom: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .ourProjectsSection{
+        margin-inline: 5rem;
+    }   
+    /* .ourProjects_title{
+        font-size: 1.5rem;
+    } */
+}
+
+@media screen and (max-width: 600px) {
+    .ourProjectsSection{
+        margin-inline: 1rem;
+    }   
+
+    .ourProjects_descriptionContainer{
+        margin-inline: 1rem;
+    }
+   
+}

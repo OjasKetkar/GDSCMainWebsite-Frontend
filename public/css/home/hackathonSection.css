@@ -1,0 +1,118 @@
+
+/* Hackathon Part */
+.hackathonSection {
+    /* width: 800px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    margin-inline: 10rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .imageContainer {
+    /* flex: 1 0 300px; */
+    flex: 1;
+    /* display: flex; */
+    /* justify-content: end; */
+    margin: 1rem;
+  }
+  
+  .image {
+    width: 500px;
+    height: auto;
+    margin: 0;
+    border-radius: 1rem;
+  }
+  
+  .descriptionContainer {
+    /* flex: 1 0 300px; */
+    flex: 1;
+    margin-inline: 4rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4284FA;
+  }
+  
+  .description {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #202124;
+    text-align: justify;
+  }
+
+  .participateButton {
+    background-color: #4284FA;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5rem;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .participateButton:hover {
+    background-color: #2c6cdb;
+  }
+  
+  .buttonText {
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+  
+
+  /* Media Query */
+  @media only screen and (max-width: 1200px) {
+    .hackathonSection{
+      flex-direction: column;
+    }
+   
+    .participateButton{
+      margin-bottom: 1rem;
+    }
+  
+  }
+
+  @media only screen and (max-width: 800px) {
+    .hackathonSection{
+      margin-inline: 5rem;
+      padding-inline: 0px;
+    }
+    .descriptionContainer{
+      /* flex: auto; */
+      margin-inline: 3rem;
+    }
+    
+    
+  }
+
+  
+
+  @media only screen and (max-width: 600px) {
+    .hackathonSection{
+      margin-inline: 1rem;
+    }
+    
+  
+    
+  }
+
+  @media only screen and (max-width: 450) {
+    .image{
+      width: 100%;
+    }
+    .descriptionContainer{
+      inset-inline: 1rem;
+    }
+    
+    
+  }
